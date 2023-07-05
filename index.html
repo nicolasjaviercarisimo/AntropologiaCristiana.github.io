@@ -1,0 +1,402 @@
+<!--CARISIMO NICOLAS JAVIER-->
+<!--Roque Gonzalez - Tecnico Superior en Desarrollo de Software - 3ro-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title> Antropologia Cristiana </title>
+       
+    
+        <link rel="stylesheet" type="text/css" href="style.css"> <!--importa  especificando la ubicacion al archivo "style.css"-->
+     
+    </head>
+
+    <title>Comparación entre Sepúlveda y Bartolomé de las Casas</title>
+    <style>
+        h1 {
+            text-decoration: underline rgb(54, 80, 14);
+            text-align: center;
+        }
+        th {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            border-radius: 10px solid rgb(54, 80, 14);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            border-radius: 15px;
+        }
+        th, td {
+            border: 7px solid rgb(54, 80, 14);
+            padding: 3px;
+        }
+        .vacio {
+            background-color: rgb(54, 80, 14);
+        }
+        .vacio:first-child {
+            background-color: rgb(54, 80, 14);
+        }
+        body {
+            background-color: rgb(0, 0, 0);
+            color: yellowgreen;
+            margin-top: 120px;
+        }
+        .imagen {
+            width: 100%;
+            height: auto;
+        }
+        .creacion-evolucion {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            
+        }
+        .creacion-evolucion h2 {
+            text-decoration: underline;
+            color: yellowgreen;
+            text-decoration: underline;
+        }
+        .creacion-evolucion p {
+            color: yellowgreen;
+        }
+
+        .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*padding: 1rem 9%;*/
+    padding: 0rem 1%;
+    background: #131312;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+} 
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  /*flex-wrap: wrap;    /*se agrego*/
+  padding: 0rem 2%;
+}
+
+
+.navbar a {
+    /*font-size: 1.5rem;*/
+    font-size: 1.5rem;
+    color: rgb(54, 80, 14);
+    font-weight: 1000;
+    /*margin-right: 6rem;*/
+    margin-right: 1.5rem;
+    /*margin-left: -6.4rem;*/
+    transition: .3s;
+    display: inline-block;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /*margin: 0 0.5 auto; /* Centra el contenedor horizontalmente */
+    text-decoration: none;
+    
+}
+
+
+
+
+
+#menu-icon {                 /*iconos barra navegacion inicio,hiabilidades etc*/
+    position: relative;
+    font-size: 3.6rem;
+    color:black;
+    cursor: pointer;
+    display: none;
+    
+}
+
+section {     /*me estira o achica la pag las secciones*/
+    min-height: 100vh;
+    padding:5rem 9% 2rem;
+    
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color:  #9cfc01; 
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.2rem 9%;
+    background: #131312;
+  }
+
+  .footer-text p{
+    /*font-size: 1.6rem;*/
+    color: yellowgreen;
+    
+  }
+
+  .footer-image {
+    width: -950px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height:fit-content; /* Ajusta la altura de la imagen automáticamente en proporción */
+}
+
+.footer-image img {
+    max-width: 50px; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    max-height: 80px; /* Ajusta la altura máxima de la imagen según tus necesidades */
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1%;
+  }
+
+  .navbar a {
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .navbar.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  min-height: 100vh;
+  padding: 7rem 2% 2rem;
+}
+
+body {
+            background-color: rgb(0, 0, 0);
+            color: yellowgreen;
+            margin-top: -2rem;
+} 
+
+@media screen and (max-width: 600px) {
+      .navbar a {
+        display: block;
+        margin-bottom: -9.7px;
+      }
+
+      .content {
+        margin-top: 50px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">  <!--encabezado de página con un menú de navegación-->
+        <!-- <a href="#" class="logo"></a> -->
+         
+        <nav class="navbar">  <!--barra de navegación-->
+            <a href="#Controversia de Valladolid">Controversia de Valladolid</a>
+            <a href="#Creación y evolución">Creación y evolución</a>
+            <a href="#El concepto de persona en Boecio">El concepto de persona en Boecio</a>
+            <a href="#La crítica de Jenófones retomada por Feuerbach">La crítica de Jenófones retomada por Feuerbach</a>
+            <a href="#Viktor Frankl y el sentido de la vida">Viktor Frankl y el sentido de la vida</a>
+            <a href="#La dignidad de la persona humana">La dignidad de la persona humana</a>
+
+            
+
+        </nav>
+    </header>
+     
+    <section
+     class="creacion-evolucion" id="Controversia de Valladolid"> 
+    <h1>Comparación entre Sepúlveda y Bartolomé de las Casas</h1>
+    <table>
+        <tr>
+            <th>Temas</th>
+            <th>Sepúlveda</th>
+            <th>Bartolomé de las Casas</th>
+        </tr>
+        <tr>
+            <td>Opinión sobre la conquista española de América</td>
+            <td>Era justificada por la necesidad de someter a los "bárbaros" y guiarlos hacia la civilización.</td>
+            <td>Era muy injusta y debía ser tratada con igualdad y justicia para los nativos americanos.</td>
+        </tr>
+        <tr>
+            <td>Opinión sobre la esclavitud de los nativos americanos</td>
+            <td>Justificada porque eran prisioneros de guerra y, por lo tanto, debían ser tratados como tales.</td>
+            <td>Totalmente inaceptable y los nativos americanos debían ser tratados con respeto y libertad.</td>
+        </tr>
+        <tr>
+            <td>Opinión sobre la conversión religiosa de los nativos americanos</td>
+            <td>Debería ser forzada a través de la violencia si era necesario.</td>
+            <td>Debería ser pacífica y voluntaria de libre albedrío.</td>
+        </tr>
+        <tr>
+            <td class="vacio"></td>
+            <td class="vacio"></td>
+            <td class="vacio"></td>
+        </tr>
+    </table>
+
+    <img src="https://escriturasvirreinales.files.wordpress.com/2014/12/la_controverse_de_valladolid_photo_2.jpg" alt="imagen rectangular" class="imagen">
+</section>
+
+<!--______________________________-->
+
+<section
+       class="creacion-evolucion" id="Creación y evolución"> 
+        <h2>Creación y evolución</h2>
+        <h3>Solución en pensamiento agustiano</h3>
+        <p>La perspectiva del pensamiento agustiano respecto a la creación y la evolución en el contexto de la teología y la antropología cristiana nos invita a considerar cómo estos dos conceptos pueden coexistir y complementarse entre sí.
+
+          En primer lugar, Agustín de Hipona, influido por la filosofía neoplatónica, sostiene que Dios es el creador supremo y soberano de todas las cosas. Según su visión, la creación es el resultado de la voluntad divina, expresando su amor y sabiduría infinita. En este sentido, creer en la creación implica reconocer que todo lo que existe tiene su origen en Dios.
+          
+          Agustín también aborda la interpretación de los relatos bíblicos de la creación. Si bien él afirma que Dios creó el mundo en un instante, también sostiene que los días mencionados en el relato del Génesis no deben ser entendidos de manera literal como periodos de 24 horas. Desde su perspectiva, el tiempo no es un concepto absoluto para Dios, y por lo tanto, la creación puede entenderse como un proceso gradual que abarca largos periodos de tiempo.
+          
+          En relación con la evolución, es importante destacar que Agustín vivió en una época anterior al desarrollo de la teoría evolutiva moderna. Sin embargo, su enfoque teológico y filosófico proporciona una base sólida para considerar la posibilidad de la evolución como un mecanismo a través del cual Dios actúa en la creación. Agustín sostiene que Dios obra a través de causas secundarias, y la evolución puede ser vista como uno de estos procesos a través de los cuales Dios permite que las formas de vida cambien y se desarrollen.
+          
+          La perspectiva agustiana busca armonizar la creación y la evolución, reconociendo la primacía de Dios como el creador y sustentador de todas las cosas. Desde esta visión, la evolución puede ser entendida como el medio a través del cual Dios guía y dirige el desarrollo de la vida, en consonancia con su propósito y plan divino.
+          
+          En el contexto de la antropología cristiana y la teología, reflexionar sobre la creación y la evolución en el marco del pensamiento agustiano nos invita a considerar la relación entre Dios, la humanidad y el mundo creado. La creación y la evolución se entrelazan, brindando una visión más amplia de la obra de Dios en la diversidad y complejidad de la vida, así como en la singularidad y dignidad de la persona humana.
+          
+          Es importante tener en cuenta que la perspectiva agustiana sobre la creación y la evolución no es la única interpretación dentro del cristianismo. Existen diversas opiniones y enfoques entre teólogos y científicos creyentes, y es enriquecedor explorar diferentes perspectivas en un diálogo abierto entre la fe y la ciencia.
+          
+          Como estudiantes, es esencial profundizar en la comprensión de la relación entre creación y evolución, teniendo en cuenta tanto los fundamentos teológicos como los descubrimientos científicos actuales. Este diálogo entre la fe y la ciencia nos permite apreciar la maravilla y complejidad del mundo creado, mientras buscamos una comprensión más completa de la obra de Dios en la creación y en nuestras propias vidas.
+          
+          En conclusión, desde la perspectiva del pensamiento agustiano, la creación y la evolución son conceptos que se entrelazan en la comprensión de la obra divina. La creación se reconoce como el resultado de la voluntad de Dios, expresando su amor y sabiduría infinita, mientras que la evolución puede ser vista como un proceso a través del cual Dios guía y dirige el desarrollo de la vida. Al explorar este tema, es importante mantener una actitud de apertura y diálogo, buscando la verdad y la comprensión tanto en la fe como en la ciencia.</p>
+    
+
+    <img src="https://1.bp.blogspot.com/-a2WgmhFZxYk/T02csyfG9rI/AAAAAAAABCU/sGS8bfZddrY/s1600/creacion%2Bvs%2Bevolucion.jpg" alt="imagen rectangular" class="imagen">
+
+</section>
+
+    <!--______________________________-->
+
+<section class="creacion-evolucion" id="El concepto de persona en Boecio">
+        <h2>El concepto de persona en Boecio</h2>
+        <h3></h3>
+        <p> Boecio, un filósofo y teólogo medieval de gran influencia en la tradición cristiana.
+
+          Anicio Manlio Torcuato Severino Boecio, conocido simplemente como Boecio, vivió en el siglo VI y su obra más destacada es "La Consolación de la Filosofía". En esta obra, Boecio desarrolla el concepto de persona, especialmente en relación con la naturaleza humana y la existencia individual.
+          
+          Para Boecio, la persona es un concepto fundamental en la comprensión de la realidad y la identidad humana. Él define a la persona como una "sustancia individual de naturaleza racional". Esta definición resalta dos elementos clave: la individualidad y la racionalidad.
+          
+          La individualidad se refiere a la unicidad y singularidad de cada persona. Boecio considera que cada ser humano es único en su existencia y tiene una dignidad intrínseca. Cada persona posee una identidad propia y no puede ser reducida a un mero objeto o entidad genérica. La individualidad se vincula con la idea de la autotrascendencia, es decir, la capacidad de ir más allá de uno mismo, de relacionarse con los demás y con Dios.
+          
+          Por otro lado, la racionalidad es un aspecto esencial de la persona según Boecio. Él considera que la capacidad racional distingue a los seres humanos de otras criaturas. La racionalidad implica la facultad de pensar, reflexionar, tomar decisiones y ser consciente de la propia existencia. A través de la razón, las personas tienen la capacidad de conocer la verdad, de ser conscientes de sí mismas y de su relación con Dios.
+          
+          Para Boecio, el concepto de persona está estrechamente relacionado con la idea de imagen de Dios. Él sostiene que los seres humanos son creados a imagen y semejanza de Dios, lo cual implica que tienen una naturaleza espiritual y una capacidad de relacionarse con lo divino. Esta imagen de Dios en la persona humana se manifiesta en la racionalidad y en la capacidad de amar y buscar el bien.
+          
+          Es importante destacar que Boecio no desarrolló una teoría exhaustiva sobre la persona, sino que sentó las bases para futuros pensadores y teólogos que profundizaron en este concepto. Su enfoque en la individualidad y la racionalidad como aspectos fundamentales de la persona humana ha sido ampliamente valorado y debatido en la tradición filosófica y teológica.
+          
+          En resumen, según Boecio, la persona es una sustancia individual de naturaleza racional, que posee una identidad única y una capacidad de razonamiento y autotrascendencia. El concepto de persona en Boecio destaca la dignidad y singularidad de cada ser humano, así como su capacidad de relacionarse con Dios y con los demás.</p>
+
+
+    <img src="https://historia-biografia.com/wp-content/uploads/2019/01/Boethius.jpg" alt="imagen rectangular" class="imagen">
+</section>
+
+    <!--______________________________-->
+
+<section class="creacion-evolucion" id="La crítica de Jenófones retomada por Feuerbach" >
+        <h2>La crítica de Jenófones retomada por Feuerbach</h2>
+        <h3></h3>
+        <p>Jenófanes fue un filósofo griego del siglo VI a.C. conocido por su crítica a la concepción antropomórfica de los dioses en la religión griega. Él argumentaba que los humanos tienden a imaginar a los dioses a su propia imagen y semejanza, proyectando en ellos sus propias características y debilidades. Esta crítica cuestionaba la idea de un Dios antropomórfico y planteaba la necesidad de una comprensión más abstracta y trascendente de la divinidad.
+          Ludwig Feuerbach, un filósofo alemán del siglo XIX, retomó la crítica de Jenófanes y la aplicó al ámbito de la teología cristiana. Feuerbach argumentaba que la concepción de Dios en el cristianismo también estaba influenciada por proyecciones antropomórficas. Según él, los atributos divinos como el amor, la sabiduría y la justicia eran simplemente cualidades humanas magnificadas y elevadas a la categoría de divinidad. Feuerbach sostenía que los humanos creaban a Dios a su propia imagen y semejanza, otorgándole características que deseaban y necesitaban.
+          Esta crítica de Feuerbach tuvo un impacto significativo en la teología cristiana, desafiando la concepción tradicional de Dios y su relación con los seres humanos. Al destacar la influencia de las proyecciones humanas en la formación de la idea de Dios, se cuestionaba la objetividad y la universalidad de la teología cristiana. Feuerbach abogaba por una visión más humanista y materialista, enfocándose en el potencial humano y la necesidad de autorrealización en lugar de depender de una divinidad trascendente.
+          Es importante tener en cuenta que esta crítica no niega la existencia de Dios, sino que problematiza la forma en que los seres humanos conciben y comprenden a Dios. Al examinar las proyecciones antropomórficas, Feuerbach buscaba fomentar una mayor comprensión de la naturaleza humana y la responsabilidad del ser humano en la construcción de su realidad religiosa.
+          La crítica de Jenófanes retomada por Feuerbach se refiere a la idea de que los seres humanos tienden a imaginar a Dios a su propia imagen y semejanza, proyectando en él características y cualidades humanas. Esta crítica desafía la concepción tradicional de la divinidad y plantea la necesidad de una comprensión más profunda y trascendente de Dios. Al explorar esta crítica, la antropología cristiana y la teología se enriquecen al considerar la influencia de las proyecciones humanas en la formación de la religión y la concepción de Dios.</p>
+    
+
+    
+    <!-- <img src="img/feuerbach , jenofane.jpg" alt="imagen rectangular" class="imagen"> -->
+    <img src="https://media.discordapp.net/attachments/1063521472506765343/1124236292750843964/feuerbach__jenofane.jpg?width=638&height=430" alt="imagen rectangular" class="imagen">
+    
+</section>
+
+    <!--______________________________-->
+
+<section class="creacion-evolucion" id="Viktor Frankl y el sentido de la vida">
+        <h2>Viktor Frankl y el sentido de la vida</h2>
+        <h3></h3>
+        <p>Viktor Frankl, destacado psiquiatra, neurólogo y sobreviviente del Holocausto, desarrolló una perspectiva existencialista única durante su experiencia en la Segunda Guerra Mundial y en los campos de concentración nazis. Su obra principal, "El hombre en busca de sentido", explora la importancia del sentido de la vida y el propósito como elementos fundamentales de la existencia humana.
+
+            La filosofía de Frankl se basa en la logoterapia, una forma de psicoterapia que busca ayudar a las personas a encontrar un propósito y sentido profundo en sus vidas. En contraste con otros enfoques existenciales, Frankl se enfoca en la búsqueda de un sentido trascendente en la vida, más allá de las circunstancias inmediatas.
+            
+            Durante su tiempo en los campos de concentración, Frankl presenció de cerca las condiciones inhumanas y el sufrimiento extremo al que estaban expuestos los prisioneros. Sin embargo, notó que aquellos que encontraban un propósito y sentido más allá de esas circunstancias tenían más probabilidades de mantener la esperanza y la resistencia.
+            
+            Frankl identificó tres fuentes principales de sentido trascendente. En primer lugar, destacó la importancia del trabajo y la realización personal como vehículos para descubrir el sentido de la vida. A través del trabajo, las personas pueden expresar su creatividad, contribuir al bienestar de los demás y experimentar un sentimiento de logro y propósito.
+            
+            En segundo lugar, resaltó el amor y las relaciones personales como otra fuente esencial de sentido trascendente. En medio de las condiciones adversas, algunos prisioneros encontraron consuelo y esperanza al cuidar de los demás y experimentar la solidaridad dentro de la comunidad de prisioneros.
+            
+            En tercer lugar, Frankl hizo énfasis en la actitud frente al sufrimiento. Observó que aquellos que mantenían una actitud de resistencia y encontraban un propósito incluso en medio del sufrimiento eran más propensos a sobrevivir y mantener su sentido de humanidad. La capacidad de elegir la actitud frente a la adversidad se convirtió en una poderosa herramienta para encontrar un sentido trascendente en situaciones extremas.
+            
+            Además, Frankl desarrolló la idea de que cada persona tiene una "tarea única" en la vida, un propósito específico que solo él o ella puede cumplir. Esta tarea se basa en las cualidades y potenciales únicos de cada individuo y es parte integral de encontrar un sentido trascendente.
+            
+            En resumen, Viktor Frankl, a través de su experiencia en la Segunda Guerra Mundial y los campos de concentración nazis, desarrolló una perspectiva existencialista centrada en la búsqueda de un sentido trascendente en medio del sufrimiento. Su enfoque se basa en la logoterapia y destaca la importancia del trabajo, el amor, las relaciones personales y la actitud frente al sufrimiento como vías para encontrar un propósito profundo en la vida. Su legado ha dejado una profunda influencia en la psicología y la filosofía, proporcionando a las personas una valiosa perspectiva sobre cómo encontrar un sentido más profundo en sus vidas.</p>
+    
+
+    <img src="https://static.wixstatic.com/media/cddc7e_c78274d8624e4dc3be3a050d5a6974ab~mv2.jpg/v1/fill/w_740,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/cddc7e_c78274d8624e4dc3be3a050d5a6974ab~mv2.jpg" alt="imagen rectangular" class="imagen">
+
+</section>
+
+    <!--______________________________-->
+
+<section class="creacion-evolucion" id="La dignidad de la persona humana">
+        <h2>La dignidad de la persona humana</h2>
+        <h3></h3>
+        <p>La dignidad de la persona humana es un tema central que engloba los distintos aspectos tratados en los textos mencionados. La persona humana, creada por Dios en justicia y a su imagen y semejanza, posee una dignidad intrínseca e inalienable. Sin embargo, el pecado ha afectado esta dignidad, llevando al hombre a rebelarse contra Dios y a buscar su propio fin apartado de Él. Esta rebelión ha generado una lucha constante entre el bien y el mal en la vida individual y colectiva del ser humano.
+
+            A pesar de los esfuerzos del hombre, él se encuentra aprisionado por el mal y es incapaz de vencerlo por sí mismo. Pero aquí es donde entra en juego la figura de Jesucristo, quien vino al mundo para liberar al hombre y renovarlo interiormente. A través de su sacrificio y su resurrección, Jesucristo ofrece al hombre la posibilidad de alcanzar su plenitud y restablecer su relación con Dios.
+            
+            La constitución del hombre como una síntesis del universo material, con su unidad de cuerpo y alma, es otro aspecto importante de su dignidad. El cuerpo humano, siendo la cima del universo material, debe ser valorado y honrado como una creación divina destinada a resucitar en el último día. Sin embargo, a causa del pecado, el hombre experimenta una rebelión interna de su cuerpo. La dignidad humana exige que el hombre glorifique a Dios en su cuerpo y no permita que las inclinaciones depravadas lo esclavicen.
+            
+            La superioridad del hombre sobre el universo material se basa en su espiritualidad y en la inmortalidad del alma. La inteligencia humana, que participa de la luz divina, tiene la capacidad de alcanzar la verdad y la realidad inteligible, aunque esta capacidad pueda estar oscurecida y debilitada por el pecado. La sabiduría, cultivada a través de la fe en Cristo y del don del Espíritu Santo, desempeña un papel fundamental en la humanización de los avances de la humanidad.
+            
+            La conciencia moral, en lo más profundo de la persona, revela la existencia de una ley objetiva que no se dicta a sí misma, pero a la cual debe obedecer. La fidelidad a la conciencia moral une a los cristianos con los demás hombres en la búsqueda de la verdad y en la resolución de los problemas morales. Una conciencia recta proporciona seguridad tanto a las personas como a las sociedades, al apartarse del capricho ciego y someterse a normas objetivas de moralidad.
+            
+            La libertad, como un signo eminente de la imagen divina en el hombre, desempeña un papel fundamental en su dignidad. Dios ha dado al hombre la capacidad de buscarlo y amarlo libremente. La libertad humana se manifiesta en la capacidad de actuar según la propia conciencia y elección, en la búsqueda del bien y en el esfuerzo por alcanzar su fin último. Sin embargo, esta libertad no es absoluta, sino que está condicionada por la verdad y por la ley moral, y se apoya en la gracia de Dios.
+            
+            El misterio de la muerte, siendo el enigma más profundo de la vida humana, plantea desafíos a la dignidad humana. El hombre experimenta el temor a la desaparición perpetua y ve la muerte como una realidad que lo supera. Sin embargo, la fe cristiana enseña que la muerte corporal será vencida por la resurrección de los muertos. La resurrección, como un don de Dios, conduce a la plenitud del hombre y a su unión definitiva con Dios. La muerte, por tanto, no es el final absoluto, sino un paso hacia la vida eterna.
+            
+            Por último, se abordan las formas y raíces del ateísmo, uno de los fenómenos más graves de nuestro tiempo. El ateísmo, que puede adoptar diversas formas, plantea desafíos a la fe cristiana y a la búsqueda de sentido y fundamento de la existencia. Las raíces del ateísmo pueden encontrarse en el sufrimiento y el mal en el mundo, así como en una sobrevaloración de los bienes materiales y humanos en detrimento de Dios.
+            
+            Los textos exploran diferentes aspectos relacionados con la dignidad de la persona humana. Desde el pecado y la rebelión contra Dios, pasando por la constitución del hombre como cuerpo y alma, hasta la importancia de la conciencia moral, la libertad y el misterio de la muerte. Estos temas se entrelazan y presentan desafíos y llamados a la reflexión en la fe cristiana, destacando la importancia de valorar la dignidad humana en todos sus aspectos y buscar una relación auténtica con Dios.</p>
+    
+
+    <img src="https://svdargentina.files.wordpress.com/2021/04/270421.jpg" alt="imagen rectangular" class="imagen">
+
+</section>
+
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright & Copy; 2023 by NicolasCarisimo | Todos los Derechos Reservados.   </p>
+    </div> 
+
+    <div class="footer-image">
+        <img src="https://nicocarisimo.netlify.app/img/88916f77-0019-4ef4-bf9a-259c11ce5732ELEGIDA.png" alt="Descripción de la imagen">
+    </div>
+</footer>
+
+</body>
+</html>
